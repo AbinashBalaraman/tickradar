@@ -105,9 +105,9 @@ export function readCreds() {
     password: process.env.ANGEL_PASSWORD?.trim() ?? "",
     totpSecret: process.env.ANGEL_TOTP_SECRET?.trim() ?? "",
     staticJwt: process.env.ANGEL_JWT_TOKEN?.trim() ?? "",
-    localIP: process.env.ANGEL_LOCAL_IP?.trim() ?? "192.168.1.100",
-    publicIP: process.env.ANGEL_PUBLIC_IP?.trim() ?? "106.193.147.98",
-    macAddress: process.env.ANGEL_MAC_ADDRESS?.trim() ?? "18:c0:4d:2b:80:75",
+    localIP: "192.168.1.100",
+    publicIP: "106.193.147.98",
+    macAddress: "18:c0:4d:2b:80:75",
   };
 }
 
