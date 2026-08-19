@@ -118,6 +118,26 @@ Open **[http://localhost:3100](http://localhost:3100)** in your browser.
 
 ---
 
+## 🚀 Deploy to Render
+
+TickRadar is ready for one-click deployment to [Render](https://render.com) as a **Web Service**:
+
+1. **Create Web Service** on Render and connect your GitHub repository.
+2. Configure settings:
+   - **Environment**: `Node`
+   - **Build Command**: `npm install && npm run build`
+   - **Start Command**: `npm start`
+3. Under the **Environment Variables** tab, add your credentials (from `.env.example`):
+   - `NODE_ENV` = `production`
+   - `ANGEL_API_KEY` = `<your_api_key>`
+   - `ANGEL_CLIENT_CODE` = `<your_client_code>`
+   - `ANGEL_PASSWORD` = `<your_password>`
+   - `ANGEL_TOTP_SECRET` = `<your_totp_secret>`
+   *(Or leave empty to use the built-in simulated data engine)*
+4. Click **Deploy Web Service**!
+
+---
+
 ## 📜 Available Scripts
 
 | Command | Description |
