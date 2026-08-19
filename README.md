@@ -78,7 +78,7 @@ The active feed status (`ANGEL` | `FYERS` | `SAMPLE`) is always broadcast via `/
 ### 1. Clone & Install Dependencies
 
 ```bash
-git clone https://github.com/your-username/tickradar.git
+git clone https://github.com/AbinashBalaraman/tickradar.git
 cd tickradar
 npm install
 ```
