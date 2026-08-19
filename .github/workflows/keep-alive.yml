@@ -1,0 +1,17 @@
+name: TickRadar 24/7 Keep-Alive
+
+on:
+  schedule:
+    # Runs every 10 minutes 24/7 to prevent Render cold starts
+    - cron: '*/10 * * * *'
+  workflow_dispatch:
+
+jobs:
+  keep-alive:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping TickRadar Health Endpoint
+        run: |
+          echo "Pinging TickRadar..."
+          HTTP_STATUS=$(curl -s -o /dev/null -w "%{http_code}" --max-time 20 "https://tickradar.onrender.com/api/status/data-source")
+          echo "Received HTTP Status: $HTTP_STATUS"
