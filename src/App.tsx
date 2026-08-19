@@ -27,7 +27,7 @@ function Logo() {
       </span>
       <span className="flex flex-col leading-none">
         <span className="text-xl font-extrabold tracking-tight text-text-primary">
-          LiveScanner
+          TickRadar
         </span>
         <span className="text-[9px] font-bold uppercase tracking-[0.2em] text-text-tertiary">
           v2.0 Quantitative Platform
@@ -210,8 +210,8 @@ export default function App() {
 
         <footer className="border-t border-border py-4 px-6 text-center">
           <p className="text-xs text-text-tertiary">
-            LiveScanner v2.0 — real-time NSE market scanning platform.
-            Educational purposes only.
+            TickRadar v2.0 — real-time NSE market scanning platform. Educational
+            purposes only.
           </p>
         </footer>
       </div>

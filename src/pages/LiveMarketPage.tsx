@@ -174,7 +174,9 @@ export function LiveMarketPage() {
   // Watchlist state stored in localStorage
   const [watchlist, setWatchlist] = useState<string[]>(() => {
     try {
-      const saved = localStorage.getItem("livescanner_watchlist");
+      const saved =
+        localStorage.getItem("tickradar_watchlist") ||
+        localStorage.getItem("livescanner_watchlist");
       return saved
         ? JSON.parse(saved)
         : ["RELIANCE-EQ", "TCS-EQ", "INFY-EQ", "HDFCBANK-EQ", "SBIN-EQ"];
@@ -189,7 +191,7 @@ export function LiveMarketPage() {
   );
 
   useEffect(() => {
-    localStorage.setItem("livescanner_watchlist", JSON.stringify(watchlist));
+    localStorage.setItem("tickradar_watchlist", JSON.stringify(watchlist));
   }, [watchlist]);
 
   // Global Keyboard Shortcuts
@@ -374,8 +376,8 @@ export function LiveMarketPage() {
     ];
 
     const fileName = selectedDate
-      ? `LiveScanner_${selectedDate}.csv`
-      : `LiveScanner_Live.csv`;
+      ? `TickRadar_${selectedDate}.csv`
+      : `TickRadar_Live.csv`;
     const csvContent =
       "data:text/csv;charset=utf-8," + rows.map((e) => e.join(",")).join("\n");
     const encodedUri = encodeURI(csvContent);

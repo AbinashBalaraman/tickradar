@@ -192,7 +192,7 @@ async function startServer() {
   }
 
   app.listen(PORT, '0.0.0.0', async () => {
-    console.log(`▶ LiveScanner server listening on http://0.0.0.0:${PORT}`);
+    console.log(`▶ TickRadar server listening on http://0.0.0.0:${PORT}`);
     try {
       const { startWebSocket } = await import('./src/server/smartapi/stream.js');
       await startWebSocket();

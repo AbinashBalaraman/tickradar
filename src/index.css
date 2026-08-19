@@ -280,26 +280,26 @@ body {
   transform: rotate(30deg) translate(50%, 50%);
 }
 
-.antigravity-float {
+.card-float {
   transition:
     transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
     box-shadow 0.4s ease;
   will-change: transform;
 }
-.antigravity-float:hover {
+.card-float:hover {
   transform: translateY(-5px);
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.18);
 }
-.dark .antigravity-float:hover {
+.dark .card-float:hover {
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.55);
 }
-.antigravity-glass {
+.glass-elevated {
   background: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border: 1px solid rgba(255, 255, 255, 0.25);
 }
-.dark .antigravity-glass {
+.dark .glass-elevated {
   background: rgba(15, 23, 42, 0.5);
   border: 1px solid rgba(255, 255, 255, 0.06);
 }

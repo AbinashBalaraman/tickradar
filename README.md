@@ -1,12 +1,12 @@
-# ⚡ LiveScanner v2.0
+# ⚡ TickRadar v2.0
 
 > **Real-Time Indian Stock Market (NSE) Quantitative Intelligence & Screening Platform**
 
-LiveScanner is a high-performance, real-time market scanner and analytics workstation designed for the Indian equity markets (NSE). Powered by **React 19, TypeScript, Express, Vite, and Tailwind CSS v4**, LiveScanner provides streaming price analytics, technical indicator screeners, institutional deal tracking, and derivatives intelligence with multi-tier broker data feeds and automatic simulation fallback.
+TickRadar is a high-performance, real-time market scanner and analytics workstation designed for the Indian equity markets (NSE). Powered by **React 19, TypeScript, Express, Vite, and Tailwind CSS v4**, TickRadar provides streaming tick-by-tick price analytics, technical indicator screeners, institutional deal tracking, and derivatives intelligence with multi-tier broker data feeds and automatic simulation fallback.
 
 ---
 
-## 🚀 Key Features
+## 🚀 Key Modules
 
 ### 1. 📊 Market Pulse & Macro Sentiment
 - **Real-Time Market Breadth**: Live Advance/Decline ratio calculated dynamically across 2,000+ NSE equity stocks.
@@ -78,8 +78,8 @@ The active feed status (`ANGEL` | `FYERS` | `SAMPLE`) is always broadcast via `/
 ### 1. Clone & Install Dependencies
 
 ```bash
-git clone https://github.com/your-username/livescanner.git
-cd livescanner
+git clone https://github.com/your-username/tickradar.git
+cd tickradar
 npm install
 ```
 
@@ -106,7 +106,7 @@ ANGEL_TOTP_SECRET=your_totp_secret
 FYERS_ACCESS_TOKEN=your_fyers_token
 ```
 
-> **Note**: If credentials are left blank, LiveScanner runs automatically on its built-in simulated data engine.
+> **Note**: If credentials are left blank, TickRadar runs automatically on its built-in simulated data engine.
 
 ### 3. Launch Development Server
 
@@ -150,5 +150,6 @@ Open **[http://localhost:3100](http://localhost:3100)** in your browser.
 
 This project is licensed under the [MIT License](LICENSE).
 
-**Disclaimer**: *LiveScanner is built for educational, research, and technical demonstration purposes. It does not constitute financial, investment, or trading advice.*
+**Disclaimer**: *TickRadar is built for educational, research, and technical analysis purposes. It does not constitute financial, investment, or trading advice.*
+
 
