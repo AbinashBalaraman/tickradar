@@ -1,5 +1,10 @@
 # ⚡ TickRadar v2.0
 
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-tickradar.onrender.com-00C853?style=for-the-badge&logo=render&logoColor=white)](https://tickradar.onrender.com/)
+
+**[🌐 Explore Live Deployment →](https://tickradar.onrender.com/)**
+
+
 > **Real-Time Indian Stock Market (NSE) Quantitative Intelligence & Screening Platform**
 
 TickRadar is a high-performance, real-time market scanner and analytics workstation designed for the Indian equity markets (NSE). Powered by **React 19, TypeScript, Express, Vite, and Tailwind CSS v4**, TickRadar provides streaming tick-by-tick price analytics, technical indicator screeners, institutional deal tracking, and derivatives intelligence with multi-tier broker data feeds and automatic simulation fallback.
