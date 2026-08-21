@@ -12,6 +12,7 @@ jobs:
     steps:
       - name: Ping TickRadar Health Endpoint
         run: |
-          echo "Pinging TickRadar..."
-          HTTP_STATUS=$(curl -s -o /dev/null -w "%{http_code}" --max-time 20 "https://tickradar.onrender.com/api/status/data-source")
-          echo "Received HTTP Status: $HTTP_STATUS"
+          echo "Pinging TickRadar on Render..."
+          HTTP_STATUS=$(curl -s -L -o /dev/null -w "%{http_code}" --connect-timeout 30 --max-time 60 "https://tickradar.onrender.com/api/status/data-source" || echo "PING_SENT")
+          echo "Ping result: $HTTP_STATUS"
+          exit 0
